@@ -1,24 +1,16 @@
-# githubavatar
-Get Github Avatar
-โปรแกรมสำหรับแสดงรูป avatar บน github ของผู้ใช้
-
-## วิธีใช้งาน
-- ติดตั้ง package ที่จำเป็นสำหรับโปรแกรม
-
-```sh
-pip install --user requests Pillow
-```
-
-## ติดตั้งโปรแกรม githubavatar 
-```sh
-pip install --user .
-```
-
-## วิธีการใช้งาน
-```sh
-githubavatar wichit2s
-githubavatar joinshena
-```
-
 # linux-lap
-# linux-lap
+
+> ผู้พัฒนาโครง Nontakan Thaoto
+
+> รหัสนักศึกษา 59110440192
+
+## จุดประสงค์
+
+> ฝึกใช้ pythin ทำ CLI โปรแกรม ตามแบบ githubavatar
+
+## สิ่งที่จะพัฒนาตัวเองให้ดีขึ้น
+
+1. จะตั้งใจเรียน
+2. ไม่เอามือถือขึ้นมาเล่นอีกแล้ว
+3. จะตั้งใจอ่านสอบปลายภาคทุกวิชา
+4. จะพยายามตื่นมาเข้าเรียนเช้าให้ทัน
