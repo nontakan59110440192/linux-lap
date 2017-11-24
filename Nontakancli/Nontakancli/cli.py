@@ -7,8 +7,9 @@ import json
 from PIL import Image
 from StringIO import StringIO
 
+
+
 def getJSON(html):
-			
 	data = {}
 	data['poster'] = html.find(attrs={'class':'poster'}).find('img')['src']
 	data['title'] =  html.find(itemprop='name').text.strip()
@@ -64,19 +65,19 @@ def getURL(input):
 		return getJSON(html)	
 	except Exception as e:
 		return 'Invalid input or Network Error!'
+		
 
 
 @click.command()
 @click.option('--as-cowboy', '-c', is_flag=True, help='Greet as a cowboy.')
 @click.argument('name', default='world', required=False)
 def main(name, as_cowboy):
-    
-    greet = 'Howdy' if as_cowboy else 'Hello'
-    click.echo('{0}, {1}.'.format(greet, name))
-	#r = getURL('Mr Incredible')
+    """My Tool does one thing, and one thing well."""
+    #greet = 'Howdy' if as_cowboy else 'Hello'
+    #click.echo('{0}, {1}.'.format(greet, name))
+    #r = getURL('Mr Incredible')
     r = json.loads(getURL(name))
     print(type(r))
     req = requests.get(r['poster'])
     img = Image.open(StringIO(req.content))
     img.show()
-
