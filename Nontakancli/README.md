@@ -2,7 +2,7 @@
 เป็นโปรเจคเปิดรูป Hero ในเกม Lol
 คำสั่งรันคือ Nontakancli ตามด้วยชื่อ Hero ที่ต้องการ
 ตัวอย่างเช่น Nontakancli Zed, Nontakancli Diana
-name list
+>name list
 Aatrox
 Ahri
 Akali
